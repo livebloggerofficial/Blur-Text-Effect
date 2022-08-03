@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.blur-text-container .blur-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  text-transform: uppercase;
+  margin: 0 24px;
+  filter: blur(8px);
+  display: inline-block;
+  transition: all 400ms ease;
+}
+
+.blur-text-container .blur-text:hover {
+  filter: blur(0);
+  transform: scale(1.2);
+}
+
+.blur-text-container .blur-text.red {
+  color: red;
+}
